@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DescobrirCep from "./Cep/DescobrirCep";
+import DescobrirEndereco from "./Endereco/DescobrirEndereco";
 
 const Forms = () => {
   const [activeButton, setActiveButton] = useState("cep");
@@ -30,16 +31,17 @@ const Forms = () => {
         <Button
           text={buttonOptions.cep.text}
           className={`button-style ${buttonOptions.cep.className}`}
-          onClick={() => handleButtonClick("cep")}
+          onClick={() => buttonClick("cep")}
         />
 
         <Button
           text={buttonOptions.endereco.text}
           className={`button-style ${buttonOptions.endereco.className}`}
-          onClick={() => handleButtonClick("endereco")}
+          onClick={() => buttonClick("endereco")}
         />
         </div>
         {activeButton === "cep" && <DescobrirCep/>}
+        {activeButton === "endereco" && <DescobrirEndereco/>}
       </div>
     </section>
   );
