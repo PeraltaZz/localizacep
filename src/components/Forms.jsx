@@ -22,23 +22,25 @@ const Forms = () => {
     </button>
   );
 
-  return(
+  return (
     <section className="search container d-flex-column">
-        <div className="form-card d-flex-column g-30">
+      <div className="form-card d-flex-column g-30">
+        <div className="d-flex g-20">
         <Button
           text={buttonOptions.cep.text}
           className={`button-style ${buttonOptions.cep.className}`}
           onClick={() => handleButtonClick("cep")}
         />
-        </div>
+
         <Button
           text={buttonOptions.endereco.text}
           className={`button-style ${buttonOptions.endereco.className}`}
           onClick={() => handleButtonClick("endereco")}
         />
+        </div>
+      </div>
     </section>
-
-  )
+  );
 };
 
 export default Forms;
