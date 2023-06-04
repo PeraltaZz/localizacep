@@ -47,9 +47,9 @@ const DataDisplayCep = ({ rua, cidade, estado, buttonClicked }) => {
         <table>
           <thead>
             <tr>
-              <th className="hide">Cidade</th>
+              <th className="hide">Rua</th>
               <th>Bairro</th>
-              <th className="hide">Localidade</th>
+              <th className="hide">Cidade</th>
               <th className="hide">UF</th>
               <th>CEP</th>
               <th>Visualizar</th>
