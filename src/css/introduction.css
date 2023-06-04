@@ -1,0 +1,20 @@
+.introduction {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 150px 20px 60px 20px;
+}
+
+@media (max-width: 900px) {
+  .introduction {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .introduction-content {
+    text-align: center;
+  }
+  .introduction-img {
+    display: none;
+  }
+}
