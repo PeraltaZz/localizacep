@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DescobrirCep from "./Cep/DescobrirCep";
 
 const Forms = () => {
   const [activeButton, setActiveButton] = useState("cep");
@@ -38,6 +39,7 @@ const Forms = () => {
           onClick={() => handleButtonClick("endereco")}
         />
         </div>
+        {activeButton === "cep" && <DescobrirCep/>}
       </div>
     </section>
   );
