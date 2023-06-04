@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DataDisplayCep from "./DataDisplayCep";
 
 const DescobrirCep = () => {
   const [rua, setRua] = useState("");
@@ -92,7 +93,14 @@ const DescobrirCep = () => {
           CONSULTAR
         </button>
       </form>
+
+      <DataDisplayCep
+        rua={rua}
+        cidade={cidade}
+        estado={estado}
+        buttonClicked={buttonClicked}
+      />
     </div>
   );
 };
- export default DescobrirCep;
+export default DescobrirCep;
