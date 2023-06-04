@@ -1,0 +1,20 @@
+.descobrir-cep .form-row:first-child {
+    grid-column: span 2;
+  }
+  .descobrir-cep form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .tabela-cep {
+    max-height: 200px;
+    overflow: auto;
+  }
+  
+  @media (max-width: 700px) {
+    .hide {
+      display: none;
+    }
+  }
+  
