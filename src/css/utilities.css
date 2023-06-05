@@ -38,7 +38,7 @@
 }
 
 .text-m {
-  font: 500 1.125rem/1.55 "Poppins", sans-serif;
+  font: 400 1.125rem/1.55 "Poppins", sans-serif;
   text-align: center;
   color: #000;
 }
@@ -89,7 +89,7 @@
     font: 300 1rem/1.55 "Poppins", sans-serif;
   }
   .text-m {
-    font: 500 1rem/1.55 "Poppins", sans-serif;
+    font: 400 1rem/1.55 "Poppins", sans-serif;
     color: #000;
   }
 }
