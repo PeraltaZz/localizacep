@@ -53,16 +53,13 @@ const DataDisplayEndereco = ({ cep, buttonClicked }) => {
   return (
     <>
       {loading && <p className="text-m">Carregando...</p>}
-      {errorMessage ? (
-        <p className="text-m">{errorMessage}</p>
-      ) : (
-        <p className="text-m">{endereco}</p>
-      )}
+      {errorMessage && <p className="text-m">{errorMessage}</p>}
       {endereco && (
         <div className="endereco-infos d-flex-column g-30">
+          <p className="text-m">{endereco}</p>
           <a
             rel="noopener noreferrer"
-            className="button-style"
+            className="button-style animation-appear"
             target="_blank"
             href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
               endereco
