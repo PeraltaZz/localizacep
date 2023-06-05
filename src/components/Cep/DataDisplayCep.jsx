@@ -44,7 +44,7 @@ const DataDisplayCep = ({ rua, cidade, estado, buttonClicked }) => {
       {error && <p className="text-m">{error}</p>}
       {cepList.length > 0 && (
         <div className="tabela-cep">
-          <table>
+          <table className="animation-appear">
             <thead>
               <tr>
                 <th className="hide">Rua</th>
