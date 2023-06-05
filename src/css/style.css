@@ -1,7 +1,9 @@
 @import"./geral.css";
+@import"./animations.css";
 @import"./utilities.css";
 @import"./header.css";
 @import"./introduction.css";
 @import"./forms.css";
 @import"./descobrir-cep.css";
 @import"./footer.css";
+@import"./descobrir-endereco.css";
