@@ -51,7 +51,7 @@ const DataDisplayEndereco = ({ cep, buttonClicked }) => {
   }
 
   return (
-    <div className="endereco-infos d-flex-column g-30">
+    <>
       {loading && <p className="text-m">Carregando...</p>}
       {errorMessage ? (
         <p className="text-m">{errorMessage}</p>
@@ -59,18 +59,20 @@ const DataDisplayEndereco = ({ cep, buttonClicked }) => {
         <p className="text-m">{endereco}</p>
       )}
       {endereco && (
-        <a
-          rel="noopener noreferrer"
-          className="button-style"
-          target="_blank"
-          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-            endereco
-          )}`}
-        >
-          Maps
-        </a>
+        <div className="endereco-infos d-flex-column g-30">
+          <a
+            rel="noopener noreferrer"
+            className="button-style"
+            target="_blank"
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              endereco
+            )}`}
+          >
+            Maps
+          </a>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
