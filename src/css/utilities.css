@@ -41,7 +41,9 @@
   font: 400 1.125rem/1.55 "Poppins", sans-serif;
   text-align: center;
   color: #000;
+  animation: appear .3s ease-in;
 }
+
 
 /* Inputs */
 .input-style {
@@ -78,6 +80,10 @@
 
 .button-style:hover {
   box-shadow: none;
+}
+
+.animation-appear{
+  animation: appear .3s ease-in;
 }
 
 @media (max-width: 900px) {
