@@ -6,9 +6,11 @@
     z-index: 5;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid black;
+    animation: enterTop 0.5s ease-in-out;
   }
   
   .header-nav {
     padding: 20px;
   }
   
+
