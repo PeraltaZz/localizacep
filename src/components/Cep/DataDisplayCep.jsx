@@ -42,8 +42,8 @@ const DataDisplayCep = ({ rua, cidade, estado, buttonClicked }) => {
     <>
       {loading && <p className="text-m">Carregando...</p>}
       {error && <p className="text-m">{error}</p>}
-      <div className="tabela-cep">
-        {cepList.length > 0 && (
+      {cepList.length > 0 && (
+        <div className="tabela-cep">
           <table>
             <thead>
               <tr>
@@ -79,8 +79,8 @@ const DataDisplayCep = ({ rua, cidade, estado, buttonClicked }) => {
               ))}
             </tbody>
           </table>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
